@@ -1,0 +1,23 @@
+{
+  "name": "ewelink-home",
+  "version": "1.0.0",
+  "description": "Ewelink home assistant",
+  "author": "Bener",
+  "scripts": {
+    "dev": "wrangler dev --local --port 8090",
+    "deploy": "wrangler deploy --minify",
+    "env:secret:prod": "wrangler secret bulk ./.prod.vars"
+  },
+  "dependencies": {
+    "ewelink-api-next": "^1.0.4",
+    "hono": "^4.7.6",
+    "wrangler": "^4.9.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.11.0",
+    "@cloudflare/workers-types": "^4.20250409.0",
+    "@typescript-eslint/eslint-plugin": "^8.29.1",
+    "eslint": "^9.24.0",
+    "eslint-plugin-format": "^1.0.1"
+  }
+}
