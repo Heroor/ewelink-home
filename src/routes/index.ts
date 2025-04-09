@@ -8,5 +8,5 @@ export function registerRoutes(app: Hono) {
     .route('/health', healthRoutes)
     .route('/auth', authRoutes)
 
-  console.log('Routes registered:', app.routes)
+  // console.log('Routes registered:', app.routes)
 }

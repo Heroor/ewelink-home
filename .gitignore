@@ -40,6 +40,7 @@ dist
 .cache
 .wrangler
 .DS_Store
+.cursor
 
 # vitepress build output
 **/.vitepress/dist
