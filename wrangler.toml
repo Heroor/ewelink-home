@@ -5,3 +5,7 @@ compatibility_flags = [ "nodejs_compat" ]
 
 [observability.logs]
 enabled = true
+
+[[kv_namespaces]]
+binding = "KV"
+id = "6fd92d1765d643d8a271daa0690b69b3"

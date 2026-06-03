@@ -10,6 +10,8 @@ interface TokenData { accessToken: string, atExpiredTime: number, refreshToken: 
 let tokenData: TokenData | null
 let client: InstanceType<typeof eWeLink.WebAPI>
 
+// 开发平台 https://dev.ewelink.cc
+// 配置 appID 一年有效期，本次配置时间：2026年6月3日
 app.get('/login', async (c) => {
   await initClient(c)
   const loginUrl = client.oauth.createLoginUrl({
